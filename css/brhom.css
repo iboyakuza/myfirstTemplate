@@ -1,0 +1,443 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth ;
+}
+
+
+.header{
+    padding: 30px;
+}
+
+.header .container{
+    padding-right:100px;
+}
+.header .Fnav {
+    padding-left: 10px;
+}
+
+    
+
+.header .Fnav li {
+    display: inline-block;
+}
+.header .Fnav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 40pt;
+    padding-left: 10px;
+    padding-right: 20px;
+    list-style: none;
+}
+.header .Fnav li :hover{
+    padding-left: 15px;
+
+    text-shadow: 2px 1px 2px blue;}
+.header .links{
+   position: relative;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header .links ul{
+    list-style: none;
+    padding: 0px;
+    margin: 13px 0;
+    background-color: rgb(240, 239, 239);
+    position: absolute;
+    right: 0;
+    top: 50px;
+    min-width: 304px;
+    font-size: 21pt;
+    display: none;
+
+}
+.header .links ul::before{
+    content: "";
+    border-width: 27px;
+    border-style: solid;
+    border-color: transparent transparent rgb(240, 239, 239) transparent;
+    position: absolute;
+    right: 0px;
+    top: -53px;
+}
+.header .links:hover ul {
+    display: block;
+}
+.header .links .Snav li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: black;
+    transition: 0.3s;
+
+}
+.header .links .Snav li a:hover{
+    padding-left: 20px;
+    font-size: 25pt;
+    text-shadow: 1px 1px 2px blue;
+    
+}
+.header .Snav li:not(:last-child) a{
+    
+    border-bottom: 1px solid rgb(207, 205, 205) ;
+}
+.Title{
+    background-image: url(../images/pexels-photo-5668858.webp);
+    background-size: cover;
+    height: calc(100vh - 103px);
+}
+
+.Title .intro{
+    position: absolute;  
+    margin: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;  
+}
+.Title h1{
+    font-size: 80pt;
+    text-transform: capitalize;
+    color: #10cab7;
+}
+.Title p{
+    font-size: 33pt;
+    color: #ffffff;
+
+}
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgb(228, 226, 223);
+}
+.features .container{
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+.features .feat{
+    text-align: center;
+    padding: 15px;
+    display: inline-block;
+    width: 501px;
+    margin: 0px 153px;
+    vertical-align: top;
+   
+}
+.features .feat i{
+    color: #10cab7;
+    font-size: 50px;
+}
+.features .feat h1{
+    font-weight: 800; 
+    text-transform: capitalize; 
+    font-size: 31pt;
+
+}
+.features .feat p{
+    font-size: 20pt;
+    line-height: 1.5;   
+}
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 0px;
+    background-color: #ececec;
+    
+}
+.portfolio .heading{
+    text-transform: capitalize;
+    font-family: 'Play', sans-serif;
+    font-size: 110pt;
+    text-align: center;
+    color: #cccccc; 
+    font-weight: 800;
+    margin: -40px;
+
+}
+.portfolio .heading +p{
+    margin: -62px 0 0;
+    text-align: center;
+    font-size: 24pt;
+    color: #4b4b4b;
+}
+
+.portfolio .card{
+    display: inline-block; 
+    vertical-align: top;
+    margin: 20px;
+    background-color: white;
+    width: 31.5%;
+}
+.portfolio .portfolio-content .card img{
+    width: 796px;
+    height: 460px;
+    padding: 0px;
+}   
+.portfolio .portfolio-content .info {
+    text-align: justify;
+    padding: 20px;
+}
+.portfolio .info h1{
+    color: #10cab7;
+    font-size: 32pt;
+}
+.portfolio .info p{
+    font-size: 20pt;
+    line-height: 1.3;
+}
+.about {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-color: white;
+    
+}
+.about .heading{
+    text-transform: capitalize;
+    font-size: 120pt;
+    font-family: 'Play', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    color: #c9c9c9; 
+    font-weight: 800;
+    letter-spacing: -4px;
+    margin: -40px;
+    margin-top: -110px;
+
+}
+.about .heading +p{
+    margin: -62px 0 0;
+    text-align: center;
+    font-size: 34px;
+    color: #797979;
+}
+.about .about-content {
+    margin: 100px 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.about .about-info {
+    flex: 1;
+    padding-left: 180px;
+  
+}
+.about .about-info p:first-of-type{
+    font-weight: 700;
+    line-height: 2;
+    margin-bottom: 40px;
+    font-size: 24pt;
+}
+.about .about-info p:last-of-type{
+    line-height: 1.5;
+    font-size: 21pt;
+}
+.about .about-content .image{
+    position: sticky;
+    
+    
+}
+.about .about-info hr{
+    width: 50%;
+    border-color: #10cab7;
+    display: inline-block;
+}
+.about .about-content .image img{
+    max-width: 100%;
+    
+}
+.about .about-content .image::before{
+    position: absolute;
+    content: "";
+    background-color: #c9c9c9;
+    width: 200px;
+    height: 804px;
+    z-index: -1;
+    top: -50px;
+    left: -55px;
+
+}
+.about .about-content .image::after{
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 600px;
+    border-bottom: 90px solid #10cab7;
+    border-left: 140px solid #10cab7;
+    top: -76px;
+    right: -222px;
+    z-index: -1;
+}
+.contact{
+    background-color: #ececec;
+}
+.contact .heading{
+    text-transform: capitalize;
+    font-size: 110pt;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    color: #cccccc; 
+    font-weight: 800;
+    letter-spacing: -4px;
+    
+}
+.contact .heading +p{
+    margin: -162px 0 0;
+    text-align: center;
+    font-size: 40px;
+    color: #4b4b4b;
+}
+.contact .contact-content{
+    text-align: center;
+    /* margin-left: 140px; */
+    font-family: 'Kanit', sans-serif;
+    font-weight: 800;
+}
+.contact .contact-content > p{
+    font-size: 40pt;
+    color: #4b4b4b;
+    margin-bottom: 10px;
+    
+
+}
+.contact .contact-content a{
+    display: block;
+    font-size: 30pt;
+    color:#21e0cd ;
+    text-decoration: none;
+    
+    
+}
+.contact .contact-info {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+   
+    
+
+}
+.contact .contact-info p{
+    display: inline-block;
+}
+.contact .contact-info a img{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+
+}
+.footer{
+    text-transform: capitalize;
+    color: white;
+    background-color: #6f6f6f;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 18pt;
+
+}
+.footer span{
+    color:#10cab7 ;
+    font-weight: bold;
+}
+@media (max-width: 767px){
+    .contact .contact-content > p{
+        font-size: 20px;
+        padding-top: 24px;
+    }
+    .contact .contact-content a{
+        font-size: 15px;
+    }
+    .contact .contact-info p{
+        font-size: 10px;
+    }
+    .contact .contact-info img{
+        width: 10px;
+        height: 10px;
+        margin: 0px 10px -20px 10px;
+
+    }
+    .about .about-content .image img{
+        width: 400px;
+        margin: -15px 21px 0;
+    }
+    
+       
+    
+    .about .about-content .image{
+        margin: 0px 80px;
+    }
+    .about .about-content .image::before{
+        width: 80px;
+        height: 360px;
+        top: -40px;
+        left: -10px;
+    }
+    .about .about-content .image::after{
+        width: 90px;
+        height: 240px;
+        border-bottom: 45px solid #10cab7;
+        border-left: 100px solid #10cab7;
+        top: -48px;
+        right: -126px;
+    }
+    .about .about-info{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .about .about-info p:first-of-type{
+        margin: 80px 0px 40px 0px;
+        font-size: 22pt;
+    }
+    .about .about-info p:last-of-type{
+        margin: 50px 0px -80px 0px;
+        font-size: 22pt;
+    }
+    .header .container{
+        padding-right:0px;
+    }
+    .header .Fnav li a{
+        font-size: 20pt;
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+    .header .Fnav {
+        padding-left: 0px;
+    }
+    .Title h1{
+        font-size: 95pt;
+    }
+    .Title p{
+        font-size: 30pt;
+    }
+    .portfolio{
+        background-color: #ececec;
+    
+    }
+    .portfolio .card{
+        display: block;
+        margin: 5px;
+        width: auto;
+        background-color: #ececec;
+    }
+    .portfolio .portfolio-content .card img{
+        width: 712px;
+        height: 460px;
+        padding: 0px;
+    }   
+    .features .feat{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+}
+
+ 
